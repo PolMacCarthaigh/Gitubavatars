@@ -38,7 +38,7 @@ if (process.argv.length < 4) {
 
 } else {
   getRepoContributors(repoOwner, repoName, function (err, contributorsList) {
-    console.log("inside anon callback, contributorsList=", contributorsList);
+    // console.log("inside anon callback, contributorsList=", contributorsList);
     contributorsList.forEach(function(contributor) {
       downloadImageByURL(contributor.avatar_url, "./avatar_images/" + contributor.login + ".jpg")
     })
