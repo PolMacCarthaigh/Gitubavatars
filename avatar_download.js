@@ -1,9 +1,10 @@
 var fs = require('fs');
 var request = require('request');
-var dotenv = require('dotenv').config
+var dotenv = require('dotenv').config();
 var repoOwner = process.argv[2];
 var repoName  = process.argv[3];
 
+debugger;
 
 var username = "PolMacCarthaigh";
 var password = "c35a063ac4fb40d8badd868bc033e75048885f5e";
