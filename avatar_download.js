@@ -4,10 +4,10 @@ var dotenv = require('dotenv').config();
 var repoOwner = process.argv[2];
 var repoName  = process.argv[3];
 
-debugger;
-
-var username = "PolMacCarthaigh";
-var password = "c35a063ac4fb40d8badd868bc033e75048885f5e";
+db.connect({
+  username: process.env.DB_USER,
+  password: process.env.DB_PASS
+});
 
 function getRepoContributors(repoOwner, repoName, callback) {
   request({
